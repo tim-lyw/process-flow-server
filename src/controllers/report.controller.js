@@ -30,8 +30,8 @@ const generateReport = async (req, res, next) => {
     // Call the Anthropic API
     const response = await anthropic.messages.create({
       model: 'claude-3-7-sonnet-20250219',
-      max_tokens: 20000,
-      temperature: 0.7, // Balance between creativity and determinism
+      max_tokens: 50000,
+      temperature: 0.6, // Balance between creativity and determinism
       messages: [
         {
           role: 'user',
