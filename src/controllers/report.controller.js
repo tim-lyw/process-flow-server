@@ -29,7 +29,7 @@ const generateReport = async (req, res, next) => {
     
     // Call the Anthropic API
     const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-3-7-sonnet-20250219',
       max_tokens: 50000,
       temperature: 0.6, // Balance between creativity and determinism
       messages: [
